@@ -61,6 +61,6 @@ steps:
     sonarQubeRunAnalysis: false
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.SourceDirectory)'
+    PathtoPublish: '$(Build.ArtifactSourceDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
